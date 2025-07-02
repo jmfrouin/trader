@@ -1,0 +1,97 @@
+# CMake build directories
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+
+# Compiled Object files
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+Trader
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# IDE files
+# CLion
+.idea/
+cmake-build-*/
+
+# Visual Studio
+.vs/
+*.vcxproj*
+*.sln
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
+.#*
+
+# Log files
+*.log
+
+# Package files
+*.tar.gz
+*.zip
+*.rar
+
+# Core dumps
+core
+core.*
+
+# Generated documentation
+doc/
+docs/html/
+docs/latex/
+
+# Testing
+Testing/
+CTestTestfile.cmake
+
+# CPack
+_CPack_Packages/
+*.dmg
+*.pkg
