@@ -74,8 +74,8 @@ namespace Utils {
         void Trade(const std::string& message, const std::map<std::string, std::string>& metadata = {});
 
         // Utility
-        std::string FormatTimestamp(const std::chrono::system_clock::time_point& timestamp) const;
-        std::string LevelToString(ELogLevel level) const;
+        [[nodiscard]] std::string FormatTimestamp(const std::chrono::system_clock::time_point& timestamp) const;
+        [[nodiscard]] std::string LevelToString(ELogLevel level) const;
 
     private:
         CLogger();

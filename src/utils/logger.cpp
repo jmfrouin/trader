@@ -4,7 +4,6 @@
 
 #include "logger.h"
 
-#include "utils/Logger.h"
 #include <iostream>
 #include <iomanip>
 #include <sstream>
@@ -26,7 +25,7 @@ CFileLogHandler::~CFileLogHandler() {
     }
 }
 
-void CFileLogHandler::write(const SLogEntry& entry) {
+void CFileLogHandler::Write(const SLogEntry& entry) {
     if (!mFile.is_open()) {
         return;
     }
@@ -121,7 +120,7 @@ CLogger& CLogger::getInstance() {
     return instance;
 }
 
-void CLogger::SetLogLevel(CLogger level) {
+void CLogger::SetLogLevel(ELogLevel level) {
     mMinLevel = level;
 }
 

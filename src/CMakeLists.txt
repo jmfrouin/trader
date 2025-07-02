@@ -2,9 +2,13 @@
 file(GLOB_RECURSE SOURCES "*.cpp" "*.c")
 file(GLOB_RECURSE HEADERS "*.h" "*.hpp")
 
+add_subdirectory(utils)
 # Créer l'exécutable avec tous les fichiers sources
 add_executable(Trader ${SOURCES} ${HEADERS})
 
+target_link_libraries(Trader PRIVATE
+        utils
+)
 # S'assurer que generate_version est exécuté avant la compilation
 add_dependencies(Trader generate_version)
 
