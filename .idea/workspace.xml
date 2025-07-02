@@ -24,11 +24,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db687f37-f171-4e8d-91a9-f0ff271bddb2" name="Changes" comment="Add version generation target to CMake and update build information">
-      <change afterPath="$PROJECT_DIR$/src/utils/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/logger.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/logger.h" afterDir="false" />
+    <list default="true" id="db687f37-f171-4e8d-91a9-f0ff271bddb2" name="Changes" comment="Introduce logging utility: add `logger` module with customizable handlers">
+      <change beforePath="$PROJECT_DIR$/.build_number" beforeDir="false" afterPath="$PROJECT_DIR$/.build_number" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/version.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/version.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +136,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1751482200366</updated>
-      <workItem from="1751482201437" duration="2809000" />
+      <workItem from="1751482201437" duration="2860000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor project structure: relocate source files into `src/`, add version generation script, and configure CMake for modular build.">
       <option name="closed" value="true" />
@@ -154,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751484150982</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Introduce logging utility: add `logger` module with customizable handlers">
+      <option name="closed" value="true" />
+      <created>1751485434578</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1751485434578</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +176,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactor project structure: relocate source files into `src/`, add version generation script, and configure CMake for modular build." />
     <MESSAGE value="Add version generation target to CMake and update build information" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add version generation target to CMake and update build information" />
+    <MESSAGE value="Introduce logging utility: add `logger` module with customizable handlers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Introduce logging utility: add `logger` module with customizable handlers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
