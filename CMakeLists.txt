@@ -3,4 +3,5 @@ project(Trader)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Trader main.cpp)
+# Inclure le sous-répertoire src
+add_subdirectory(src)
