@@ -1,12 +1,16 @@
 file(GLOB_RECURSE SOURCES "*.cpp" "*.c")
 file(GLOB_RECURSE HEADERS "*.h" "*.hpp")
 
-add_subdirectory(core utils)
+add_subdirectory(api backtester core risk strategy utils)
 
 add_executable(Trader ${SOURCES} ${HEADERS})
 
 target_link_libraries(Trader PRIVATE
+        api
+        backtester
         core
+        risk
+        strategy
         utils
 )
 add_dependencies(Trader generate_version)

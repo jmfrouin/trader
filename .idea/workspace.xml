@@ -30,13 +30,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db687f37-f171-4e8d-91a9-f0ff271bddb2" name="Changes" comment="Add `ConfigManager` utility, update build number to 21, and adjust project configurations">
-      <change afterPath="$PROJECT_DIR$/src/api/BinanceApi.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/BinanceApi.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/IExchangeAPI.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/KrakenApi.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/KrakenApi.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+    <list default="true" id="db687f37-f171-4e8d-91a9-f0ff271bddb2" name="Changes" comment="Update editor inspection settings for improved code analysis consistency">
+      <change afterPath="$PROJECT_DIR$/src/api/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backtester/BackTester.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backtester/BackTester.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backtester/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/risk/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/risk/RiskManager.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/risk/RiskManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strategy/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeLists.txt" afterDir="false" />
     </list>
@@ -75,6 +77,9 @@
     <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/core/version.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/utils/Logger.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/utils/Logger.h" root0="FORCE_HIGHLIGHTING" />
@@ -96,34 +101,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;C/C++ File.main.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;CMake Application.Trader.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jmfrouin/dev/Trader/src/core&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/jmfrouin/dev/Trader/main.cpp&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "C/C++ File.main.cpp.executor": "Run",
+    "CMake Application.Trader.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.west.config.association.type.startup.service": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/jmfrouin/dev/Trader/src/strategy",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/jmfrouin/dev/Trader/main.cpp",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/strategy" />
+      <recent name="$PROJECT_DIR$/src/risk" />
+      <recent name="$PROJECT_DIR$/src/backtester" />
+      <recent name="$PROJECT_DIR$/src/api" />
       <recent name="$PROJECT_DIR$/src/core" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -132,6 +141,11 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.Trader">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Trader" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Trader" TARGET_NAME="Trader" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Trader" RUN_TARGET_NAME="Trader">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -162,7 +176,7 @@
       <updated>1751482200366</updated>
       <workItem from="1751482201437" duration="2860000" />
       <workItem from="1751652724915" duration="1598000" />
-      <workItem from="1751654363343" duration="596000" />
+      <workItem from="1751654363343" duration="1488000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor project structure: relocate source files into `src/`, add version generation script, and configure CMake for modular build.">
       <option name="closed" value="true" />
@@ -220,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751653136437</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Update editor inspection settings for improved code analysis consistency">
+      <option name="closed" value="true" />
+      <created>1751654990012</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1751654990012</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +261,9 @@
     <MESSAGE value="Add comprehensive `.gitignore` to exclude build, IDE, OS, and temporary files" />
     <MESSAGE value="Link utils library to main project, update build number to 18, and refine logging functionality." />
     <MESSAGE value="Add `ConfigManager` utility, update build number to 21, and adjust project configurations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add `ConfigManager` utility, update build number to 21, and adjust project configurations" />
+    <MESSAGE value="Update IDE inspection settings to include comprehensive highlighting configurations" />
+    <MESSAGE value="Update editor inspection settings for improved code analysis consistency" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update editor inspection settings for improved code analysis consistency" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
