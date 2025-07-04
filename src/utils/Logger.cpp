@@ -2,7 +2,7 @@
 // Created by Jean-Michel Frouin on 02/07/2025.
 //
 
-#include "logger.h"
+#include "Logger.h"
 
 #include <iostream>
 #include <iomanip>
