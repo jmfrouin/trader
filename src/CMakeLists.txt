@@ -1,7 +1,12 @@
 file(GLOB_RECURSE SOURCES "*.cpp" "*.c")
 file(GLOB_RECURSE HEADERS "*.h" "*.hpp")
 
-add_subdirectory(api backtester core risk strategy utils)
+add_subdirectory(api)
+add_subdirectory(backtester)
+add_subdirectory(core)
+add_subdirectory(risk)
+add_subdirectory(strategy)
+add_subdirectory(utils)
 
 add_executable(Trader ${SOURCES} ${HEADERS})
 
